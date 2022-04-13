@@ -1,0 +1,23 @@
+{
+  "name": "media-collection",
+  "version": "1.0.0",
+  "description": "Locate where your damn CDs, DVDs, and books are located at home!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebabel-eu/media-collection.git"
+  },
+  "keywords": [
+    "media",
+    "collection"
+  ],
+  "author": "Thomas Amar <hello@ebabel.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebabel-eu/media-collection/issues"
+  },
+  "homepage": "https://github.com/ebabel-eu/media-collection#readme"
+}
