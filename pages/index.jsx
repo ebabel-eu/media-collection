@@ -23,11 +23,17 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header title="📚 Books 💿 CDs 📀 DVDs" />
+      <Header title="📚 Books 💿 CDs 📀 DVDs 🎧 Audio 🎬 Video" />
       <ul>
         {mediaItems.map(item => (
           <li key={item}>
-            {item.mainTitle}{item.subTitle ? ` (${item.subTitle})` : '' }<br />
+            {item.format === 'book' ? '📚' : ''}
+            {item.format === 'cd' ? '💿' : ''}
+            {item.format === 'dvd' ? '📀' : ''}
+            {item.format === 'audio' ? '🎧' : ''}
+            {item.format === 'video' ? '🎬' : ''}
+            {item.mainTitle}
+            {item.subTitle ? ` (${item.subTitle})` : '' }<br />
             {item.currentLocation}
           </li>
         ))}
